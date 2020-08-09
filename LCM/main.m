@@ -4,7 +4,7 @@ close all;
 
 addpath('../');
 % 读取图像
-datapath = '../data/';
+datapath = '../Dataset/data5/';
 
 % 是否输出结果
 wflag = 1;
@@ -18,7 +18,7 @@ for i = 1:25
         img = imread([datapath,num2str(i),'.bmp']);
     end
     
-    if size(img,1)==3
+    if size(img,3)==3
         img = rgb2gray(img);
     end
  
